@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,51 +30,63 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <div class="time-7-8" id="7-8">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="7">
+        <div class="hour">07:00 - 08:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="7">Save</button>
       </div>
-      <div class="time-8-9" id="8-9">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="8">
+        <div class="hour">08:00 - 09:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="8">Save</button>
       </div>
-      <div class="time-9-10" id="9-10">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="9">
+        <div class="hour">09:00 - 10:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="9">Save</button>
       </div>
-      <div class="time-10-11" id="10-11">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="10">
+        <div class="hour">10:00 - 11:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="10">Save</button>
       </div>
-      <div class="time-11-12" id="11-12">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="11">
+        <div class="hour">11:00 - 12:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="11">Save</button>
       </div>
-      <div class="time-12-13" id="12-13">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="12">
+        <div class="hour">12:00 - 13:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="12">Save</button>
       </div>
-      <div class="time-13-14" id="13-14">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="13">
+        <div class="hour">13:00 - 14:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="13">Save</button>
       </div>
-      <div class="time-14-15" id="14-15">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="14">
+        <div class="hour">14:00 - 15:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="14">Save</button>
       </div>
-      <div class="time-15-16" id="15-16">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="15">
+        <div class="hour">15:00 - 16:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="15">Save</button>
       </div>
-      <div class="time-16-17" id="16-17">
-        <input type="text"></input>
-        <button class="saveBTN save7-8"></button>
+      <div class="timeDiv" id="16">
+        <div class="hour">16:00 - 17:00</div>
+        <textarea class="task"></textarea>
+        <button class="saveBTN" id="16">Save</button>
       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="/Assets/script.js"></script>
   </body>
 </html>
