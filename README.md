@@ -1,8 +1,8 @@
-# Daily-Calander
+# Daily-Calender
 A daily calender to add events of the day as well as schedule events at specific times.
 
-## Discription
-I have created a url that has a daily scheduler. In this dailer scheduler there are alocated timeslots to that of a normal working day. A user has the ability to schedule events of the day such as meetings, activities or events throughout the day. The information will also be stored in the local storage.
+## Description
+I have created a URL that has a daily scheduler. In this daily scheduler there are allocated timeslots to that of a normal working day. A user has the ability to schedule events of the day such as meetings, activities or events throughout the day. The information will also be stored in the local storage.
 
 ### Installation
 Click on the following link to access the URL:
@@ -11,17 +11,17 @@ https://mikaelcope.github.io/Daily-Calander/
 
 ### Usage
 Once the URL has loaded this is what you will see: 
-![alt text](./Assets/Images/Screenshot%202023-12-12%20194752.png)
-Note: image may display multiple colours based on the time of day. <br>
+![alt text](./Assets/Images/Screenshot%202023-12-12%20194752.png)<br>
+Note: Image may display multiple colours based on the time of day. <br>
 Grey: Passed Hours <br>
 Red: Current Hour <br>
 Green: Future Hours (Available Hours) <br>
 
-The page will load any information in the current local storage, if none, imputs will be blank. The user will be able to imput tasks planned for the day and save. This infomation will be saved to the local storage. The user can then delete the information in the text area and save to blank the space.
+The page will load any information in the current local storage, if none, inputs will be blank. The user will be able to input tasks planned for the day and save. This information will be saved to the local storage. The user can then delete the information in the text area and save to blank the space.
 
 
 ### Credits
-EdX front end web developement course.
+EdX front end web development course.
 
 
 ### License
