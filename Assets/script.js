@@ -1,7 +1,7 @@
 var currentDay = $('#currentDay')
 var day = dayjs().format('DD-MM-YYYY')
 var textArea = document.querySelectorAll('.task')
-var BTNlist = document.querySelectorAll('.saveBTN')
+var BTNlist = document.querySelectorAll('.saveBtn')
 let localStorageData = JSON.parse(localStorage.getItem('work_day_scheduler'))
 //Display Current Date//
 currentDay.text(day)
@@ -35,28 +35,19 @@ $(document).ready(function () {
     }
     console.log("hello")
 
-    for(var p = 0; p < localStorageData.length; p++){
-        console.log(localStorageData[p])
-        var hour = localStorageData[p].note
-        var valueStore = localStorageData[p].value
 
-        var hourBTN = $('#'+hour)
-        console.log(hourBTN)
-        console.log(hourBTN.siblings())
-    }
-    
+
     console.log(BTNlist)
     for (var j = 0; j < BTNlist.length; j++) {
-        BTNlist[j].addEventListener('click', function(event) {
+        BTNlist[j].addEventListener('click', function (event) {
             event.preventDefault()
             // console.log(event.target)
             // console.log(event.target.getAttribute('id'))
             // console.log(event.target.previousElementSibling.value)
 
-            let localStorageData = JSON.parse(localStorage.getItem('work_day_scheduler'))
             console.log(localStorageData)
 
-            if (localStorageData === null){
+            if (localStorageData === null) {
                 localStorageData = []
                 localStorageData.push({
                     note: event.target.getAttribute('id'),
@@ -67,8 +58,18 @@ $(document).ready(function () {
                     note: event.target.getAttribute('id'),
                     value: event.target.previousElementSibling.value
                 })
-            } 
+            }
             localStorage.setItem('work_day_scheduler', JSON.stringify(localStorageData))
         })
+    }
+
+    for (var p = 0; p < localStorageData.length; p++) {
+        console.log(localStorageData[p])
+        var hour = localStorageData[p].note
+        var valueStore = localStorageData[p].value
+        var hourBTN = $('#' + hour)
+        console.log(hourBTN)
+        console.log(hourBTN.siblings()[1])
+        hourBTN.siblings()[1].textContent = valueStore
     }
 })

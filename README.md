@@ -1,5 +1,5 @@
 # Daily-Calander
-A daily calender to add events of the day schedules at specific times.
+A daily calender to add events of the day as well as schedule events at specific times.
 
 ## Discription
 I have created a url that has a daily scheduler. In this dailer scheduler there are alocated timeslots to that of a normal working day. A user has the ability to schedule events of the day such as meetings, activities or events throughout the day. The information will also be stored in the local storage.
