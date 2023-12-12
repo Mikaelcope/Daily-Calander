@@ -2,6 +2,7 @@ var currentDay = $('#currentDay')
 var day = dayjs().format('DD-MM-YYYY')
 var textArea = document.querySelectorAll('.task')
 var BTNlist = document.querySelectorAll('.saveBTN')
+let localStorageData = JSON.parse(localStorage.getItem('work_day_scheduler'))
 //Display Current Date//
 currentDay.text(day)
 
@@ -34,6 +35,15 @@ $(document).ready(function () {
     }
     console.log("hello")
 
+    for(var p = 0; p < localStorageData.length; p++){
+        console.log(localStorageData[p])
+        var hour = localStorageData[p].note
+        var valueStore = localStorageData[p].value
+
+        var hourBTN = $('#'+hour)
+        console.log(hourBTN)
+        console.log(hourBTN.siblings())
+    }
     
     console.log(BTNlist)
     for (var j = 0; j < BTNlist.length; j++) {
@@ -58,7 +68,7 @@ $(document).ready(function () {
                     value: event.target.previousElementSibling.value
                 })
             } 
-            localStorage.setItem('work_day_scheduler', JSON.stringify(localStorage))
+            localStorage.setItem('work_day_scheduler', JSON.stringify(localStorageData))
         })
     }
 })
